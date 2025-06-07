@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, accuracy_score
 # === Fungsi untuk load dan siapkan data ===
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_klasifikasi_mahasiswa_logis_fix.csv")
+    df = pd.read_csv("dataset_mhs.csv")
     X = df.drop(columns=["Status Kelulusan", "Nama"])
     y = df["Status Kelulusan"]
 
